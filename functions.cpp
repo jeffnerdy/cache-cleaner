@@ -128,7 +128,6 @@ bool Clean(std::string& path, std::ifstream& file)
 	}
 
 	std::cout << count << " file(s) have been removed." << std::endl;
-	Sleep(4000);
 
 	return true;
 }
