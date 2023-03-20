@@ -12,8 +12,8 @@ Each path found will then be added to **to_be_cleaned.txt**.
 
 ### Clean
 
-This is the second option in the option menu. It cleans all the folders/directories contained in **to_be_cleaned.txt** -if the file is empty nothing will happen.
+This is the second option in the option menu. It cleans all the folders/directories specified in **to_be_cleaned.txt** -if the file is empty nothing will happen.
 
-You can also simply add the paths you want to be cleaned to the .txt file without the need to use **Search**. Keep in mind that after each **Clean** operation the files in **to_be_cleaned.txt** will be removed from the file.
+You can also simply add the directories you want to be cleaned to the .txt file without the need to use **Search**. Keep in mind that after each **Clean** operation the paths in **to_be_cleaned.txt** will be removed from it.
 
 I highly advise that to check the paths in **to_be_cleaned.txt** before cleaning, so that it won’t accidentally delete a sensitive file or any other file that is required for your system to run properly.
