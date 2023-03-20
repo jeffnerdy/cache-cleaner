@@ -1,6 +1,6 @@
 # Cache Cleaner
 
-The program has two main functionalities, **Search** and **Clean**. It automates cleaning cache files -or any other type of files actually, using these two functionalities.
+This program has two main functionalities, **Search** and **Clean**. It automates cleaning cache files -or any other type of files actually, using these two functionalities.
 
 
 ### Search
