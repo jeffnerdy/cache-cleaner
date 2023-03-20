@@ -38,6 +38,7 @@ int main()
 		Clean(path, iclean);
 
 		std::ofstream clearfile("to_be_cleaned.txt"); // empties to_be_cleaned.txt
+		Sleep(4000);
 		break;
 	}
 	}
