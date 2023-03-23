@@ -1,6 +1,6 @@
 #include "functions.h"
 
-// comments inside functions are for extra debugging
+// comments inside functions are for debugging
 
 bool SetUp(std::string search, std::string clean)
 {
