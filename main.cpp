@@ -1,23 +1,23 @@
 #include "functions.h"
 
-std::string _search = "to_be_searched.txt";
-std::string clean = "to_be_cleaned.txt";
-std::string path;
-
-int input = 0;
-
 int main()
 {
 	// set up
-	if (!SetUp(_search, clean))
+	const std::filesystem::path _search = "to_be_searched.txt";
+	const std::filesystem::path _clean = "to_be_cleaned.txt";
+
+	if (!SetUp(_search, _clean))
 	{
 		std::cout << "eroor: missing files." << std::endl;
-		Sleep(4000);
+		Sleep(3000);
 
 		return 0;
 	}
 
 	// main logic
+	int input{ 0 };
+	std::string path;
+
 	std::cout << "Select an option:\n\n";
 	std::cout << "1. Search\n2. Clean\n\n";
 	std::cin >> input;
@@ -27,18 +27,21 @@ int main()
 	{
 	case 1:
 	{
-		std::ifstream search("to_be_searched.txt");
-		std::ofstream oclean("to_be_cleaned.txt", std::ios_base::app);
+		std::ifstream search(_search);
+		std::ofstream oclean(_clean, std::ios_base::app);
+
 		Search(path, search, oclean);
 		break;
 	}
 	case 2:
 	{
-		std::ifstream iclean("to_be_cleaned.txt");
+		std::ifstream iclean(_clean);
+
 		Clean(path, iclean);
 
-		std::ofstream clearfile("to_be_cleaned.txt"); // empties to_be_cleaned.txt
-		Sleep(4000);
+		std::ofstream clearfile(_clean); // empties to_be_cleaned.txt
+
+		Sleep(3000);
 		break;
 	}
 	}
